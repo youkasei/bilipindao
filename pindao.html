@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index-media.css">
+    <link rel="stylesheet" href="./scss/index.css">
+
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="top-nav" id="topnav" onclick="click()">
+            <div class=" top-back">
+                <div class="top">
+
+                    <ul class="nav">
+                        <img class="logo" src="https://s3.ax1x.com/2020/12/01/DWoMhq.png" width="40px" height="40px"
+                            alt="">
+                        <li style="letter-spacing: 3px;"><a href="">主站</a></li>
+                        <li style="letter-spacing: 3px;"><a href="">番剧</a></li>
+                        <li><a href="">游戏中心</a></li>
+                        <li><a href="">下载app</a></li>
+                    </ul>
+                    <form action="" method="post">
+                        <input type="text" placeholder="搜索主页">
+                        <a class="found" href=""><img src="https://s3.ax1x.com/2020/12/01/DWoKNn.png" height="34px"
+                                alt=""></a>
+                    </form>
+                    <ul class="nav" style="width: 350px;justify-content: flex-end;">
+                        <li
+                            style="width: 40px;height: 40px;border-radius: 50%;background-color: #ccc;border: 1px solid rgba(207, 205, 205, 0.493);">
+                        </li>
+                        <li id="btn" onclick="click()"
+                            style="position: relative;;cursor: pointer;;line-height: 40px;color: #fff;">登录
+                            <div id="logbox">
+                                <p>登录后你可以：</p>
+                                <div class="danmu">
+                                    <img class="danmu1" src="./img/danmu (1).png" alt="">
+                                    <img class="danmu2" src="./img/danmu (1).png" alt="">
+                                </div>
+                                <div class="btn-box">
+                                    <button class="login">登录</button>
+                                    <button class="regist">注册</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">注册</a></li>
+                        <li
+                            style="border-radius: 2px;text-align: center;width: 100px;height: 36px;;background-color:#FC7AA8;">
+                            <a style="height: 36px;margin: 2px 0;line-height: 36px;" href="">投稿</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-blank" id="topblank" style="flex: 1;">
+                <form id="sspindao"
+                    style="position: relative;transition: 1s;top: 40px;left: 20px;display: flex;flex-direction: row;height: 40px;font-size: 0;max-width: 500px;"
+                    action="" method="post">
+                    <input
+                        style="padding-left: 20px;width: 200px;height: 38px;border: none;background-color: rgba(204, 204, 204, 0.664);"
+                        type="text" placeholder="搜索频道">
+                    <a style="display:inline-block;width: 48px;height: 40px;background-color: rgba(255, 255, 255, 0.623);"
+                        class="found" href=""><img style="transform: scale(.8);margin-left: 4px;"
+                            src="https://s3.ax1x.com/2020/12/01/DWoKNn.png" height="40px" alt=""></a>
+                </form>
+            </div>
+        </div>
+        <div class="mid" id="mid">
+            <div id="left-nav-box2" style="opacity: 0;">
+                <div id="erduol"></div>
+                <div id="erduor"></div>
+                <div id="face"></div>
+            </div>
+            <div class="left-nav" id="left-nav">
+                <div id="left-nav-box1" style="display: flex;flex-direction: column;height: 100%;">
+                    <h2 id="navbtn">发现频道
+                        <img id="mbtn" style="float: right;transform: scale(.4);transform-origin: right;"
+                            src="./img/导航.png" width="50px" height="50px" alt="">
+                    </h2>
+                    <ul>
+                        <li id="all" onclick="click" style="background-color:  #02a7f0;color: #fff;"><a
+                                href="./pages/all-types.html" target="content">全部频道</a></li>
+                        <li id="anima" onclick="click"><a href="./pages/anima.html" target="content">动漫</a></li>
+                        <li id="movie" onclick="click"><a href="./pages/movie.html" target="content">电影</a>
+                        </li>
+                        <li id="tv" onclick="click"><a href="./pages/tv.html" target="content">电视剧</a></li>
+                        <li id="music" onclick="click"><a href="./pages/music.html" target="content">音乐</a></li>
+                        <li id="tec" onclick="click"><a href="./pages/tec.html" target="content">科技</a></li>
+                        <li id="pe" onclick="click"><a href="./pages/pe.html" target="content">体育</a></li>
+                    </ul>
+                    <div style=" flex: 1;width: 100%;" class="flex-blank">
+                    </div>
+                    <div class="log-info">
+                        <a id="log-mini" style="cursor: pointer;">登录拥有更多的个人天地哦</a>
+                    </div>
+                </div>
+            </div>
+            <iframe id="rightbox" scrolling="yes" name="content" class="content" src="./pages/all-types.html"
+                frameborder="0"></iframe>
+            <div class="blank-mid"></div>
+        </div>
+
+    </div>
+    <div id="pindao-log" class="pindao-log-box">
+        <div class="pindao-log">
+            <div id="cancel"><img style="transform: scale(.5);" src="./img/取消.png" width="29px" alt=""></div>
+            <div class="pindao-log-tabs">
+                <button>登录</button>
+                <button>注册</button>
+            </div>
+            <a class="mail" href="">短信验证码登录</a>
+            <form action="">
+                <input type="text" name="" placeholder="请输入手机号/邮箱">
+                <input type="password" placeholder="请输入密码">
+                <div class="remenber">
+                    <input type="checkbox" name="" id="" style="width: 18px;height: 18px;margin: 0;padding: 0;">
+                    <span>记住我</span>
+                    <a href="">忘记密码？
+                    </a>
+                    <a href="">无法验证？</a>
+                </div>
+            </form>
+            <button id="mini-login">登录</button>
+            <button id="mini-regist">扫描二维码登录</button>
+            <p>登录即代表你同意<a href="">用户协议</a>和<a href="">隐私政策</a></p>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>
